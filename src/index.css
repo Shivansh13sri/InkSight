@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .bg-light-mode {
+    background-image: url('/background.jpg'); /* light version */
+    background-size: cover;
+    background-position: center;
+  }
+
+  .bg-dark-mode {
+    background-image: url('/background2.jpg'); /* dark version */
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+}

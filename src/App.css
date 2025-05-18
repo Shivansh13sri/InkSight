@@ -1,0 +1,218 @@
+/* Light & Dark Mode Theme */
+:root {
+  --bg-light: url("../public/bg_white.jpg"); /* Change this to your light background image */
+  --bg-dark: url("../public/background.jpg");   /* Change this to your dark background image */
+  --text-light: #333;
+  --text-dark: #f8f9fa;
+  --nav-bg-light: rgba(255, 255, 255, 0.9);
+  --nav-bg-dark: rgba(26, 26, 26, 0.9);
+  --btn-light: #007bff;
+  --btn-dark: #ffc107;
+}
+
+/* Apply Background Image */
+body {
+  font-family: "Inter", sans-serif;
+  background-image: var(--bg-light);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--text-light);
+  transition: all 0.3s ease-in-out;
+}
+
+.dark body {
+  background-image: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+/* 📌 Main Container */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  /*padding-top: 80px;*/
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background: var(--nav-bg-light);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  transition: all 0.3s ease-in-out;
+}
+
+.dark .navbar {
+  background: var(--nav-bg-dark);
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--btn-light);
+  transition: color 0.3s ease-in-out;
+}
+
+.dark .nav-link {
+  color: var(--btn-dark);
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.theme-toggle {
+  background: var(--btn-light);
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-right: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.dark .theme-toggle {
+  background: var(--btn-dark);
+  color: #121212;
+}
+
+.theme-toggle:hover {
+  opacity: 0.8;
+}
+
+
+.app-logo {
+  width: 150px;
+  height: auto;
+  margin-top: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+.welcome-text {
+  margin-top: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--btn-light);
+  transition: color 0.3s ease-in-out;
+}
+
+.dark .welcome-text {
+  color: var(--btn-dark);
+}
+
+/* About section styles */
+.about-section {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  background: #fefefe;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.about-section h3 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.about-section ol {
+  padding-left: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.about-section ol li {
+  margin-bottom: 0.5rem;
+}
+
+.nav-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--btn-light);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.dark .nav-profile {
+  color: var(--btn-dark);
+}
+
+.profile-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: default;
+  user-select: none;
+}
+
+.profile-pic-circle img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid var(--btn-light);
+  box-shadow: 0 0 5px rgba(107, 115, 255, 0.6);
+  transition: border-color 0.3s ease;
+}
+
+.dark .profile-pic-circle img {
+  border-color: var(--btn-dark);
+  box-shadow: 0 0 5px rgba(255, 193, 7, 0.6);
+}
+
+.profile-pic-circle img:hover {
+  border-color: #fff;
+  box-shadow: 0 0 8px #fff;
+}

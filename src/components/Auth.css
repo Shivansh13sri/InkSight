@@ -1,0 +1,157 @@
+/* Enhanced Auth and MyTexts styles for more attractive UI */
+
+.auth-container {
+  max-width: 420px;
+  margin: 4rem auto;
+  padding: 2.5rem 3rem;
+  background: linear-gradient(135deg, #6b73ff, #000dff);
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(107, 115, 255, 0.6);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #f0f0f5;
+  transition: background 0.4s ease;
+}
+
+.auth-container:hover {
+  background: linear-gradient(135deg, #000dff, #6b73ff);
+}
+
+.auth-heading {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-shadow: 0 3px 8px rgba(0,0,0,0.5);
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-form label {
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  color: #d1d5db;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.auth-input {
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.75rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  transition: box-shadow 0.4s ease, background-color 0.4s ease;
+  box-shadow: inset 0 0 10px rgba(255,255,255,0.3);
+  background-color: rgba(255, 255, 255, 0.12);
+  color: #f0f0f5;
+  font-weight: 600;
+}
+
+.auth-input::placeholder {
+  color: rgba(240, 240, 245, 0.6);
+  font-style: italic;
+}
+
+.auth-input:focus {
+  outline: none;
+  box-shadow: 0 0 12px 3px #a78bfa;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.auth-button {
+  padding: 1rem;
+  background: linear-gradient(135deg, #a78bfa, #7c3aed);
+  color: white;
+  font-weight: 900;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  font-size: 1.3rem;
+  transition: background 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 8px 20px rgba(167, 139, 250, 0.8);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.auth-button:hover {
+  background: linear-gradient(135deg, #7c3aed, #a78bfa);
+  box-shadow: 0 10px 28px rgba(124, 58, 237, 0.9);
+}
+
+.auth-footer {
+  margin-top: 1.5rem;
+  text-align: center;
+  color: #c4c4d8;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.auth-link {
+  color: #c4b5fd;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.auth-link:hover {
+  color: #a78bfa;
+  text-decoration: underline;
+}
+
+/* MyTexts page styles */
+.mytexts-container {
+  max-width: 720px;
+  margin: 3rem auto;
+  padding: 2.5rem 3rem;
+  background: linear-gradient(135deg, #6b73ff, #000dff);
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(107, 115, 255, 0.6);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #f0f0f5;
+  transition: background 0.4s ease;
+}
+
+.mytexts-container:hover {
+  background: linear-gradient(135deg, #000dff, #6b73ff);
+}
+
+.mytexts-container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-shadow: 0 3px 8px rgba(0,0,0,0.5);
+}
+
+.text-item {
+  background: rgba(255, 255, 255, 0.18);
+  padding: 1.25rem 2rem;
+  margin-bottom: 1.25rem;
+  border-radius: 16px;
+  color: #f0f0f5;
+  box-shadow: 0 6px 18px rgba(124, 58, 237, 0.7);
+  font-size: 1.2rem;
+  line-height: 1.6;
+  transition: background 0.4s ease;
+  cursor: default;
+}
+
+.text-item:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.text-item p {
+  margin: 0 0 0.75rem 0;
+  font-weight: 600;
+}
+
+.text-item small {
+  color: #c4c4d8;
+  font-size: 1rem;
+  font-style: italic;
+}
