@@ -38,20 +38,23 @@ Frontend and backend are deployed separately.
 cd inksight
 npm install
 npm run dev
+```
 
 ### Backend
 
+```bash
 cd backend
 pip install -r requirements.txt
 uvicorn app:app --reload
+```
 
-###📝 Creator Info
+## 📝 Creator Info
 
 Creator: Shivansh Srivastava
-Email: [shivansh.sri03@gmail.com](mailto:shivansh.sri03@gmail.com)
+Email: shivansh.sri03@gmail.com
 LinkedIn: shivansh-srivastava-01575a19b
 
-###📷 Screenshots
+## 📷 Screenshots
 
 ![Home page](./screenshots/Screenshot%202025-05-19%20004743.png>)
 ![Dark Home page](./screenshots/Screenshot%202025-05-19%20004526.png)
@@ -59,5 +62,8 @@ LinkedIn: shivansh-srivastava-01575a19b
 ![Uploaded text image](./screenshots/Screenshot%202025-05-19%20004646.png)
 ![Extracted Text](./screenshots/Screenshot%202025-05-19%20004720.png)
 
-###📄 License
+## 📄 License
+
 This project is open-source under the MIT License.
+
+**`Fix: Proper markdown formatting for headings and code blocks`**
