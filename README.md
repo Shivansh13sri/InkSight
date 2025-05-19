@@ -52,7 +52,7 @@ uvicorn app:app --reload
 
 - Creator: Shivansh Srivastava
 - Email: shivansh.sri03@gmail.com
-- LinkedIn: shivansh-srivastava-01575a19b
+- LinkedIn: [shivansh-srivastava-01575a19b](https://www.linkedin.com/in/shivansh-srivastava-01575a19b)
 
 ## 📷 Screenshots
 
