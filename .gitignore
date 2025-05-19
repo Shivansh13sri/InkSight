@@ -118,3 +118,6 @@ build/
 # Misc
 .DS_Store
 Thumbs.db
+
+# model
+backend/models/trocr_epoch_10.pth
