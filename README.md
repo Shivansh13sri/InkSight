@@ -50,13 +50,13 @@ uvicorn app:app --reload
 
 ## 📝 Creator Info
 
-Creator: Shivansh Srivastava
-Email: shivansh.sri03@gmail.com
-LinkedIn: shivansh-srivastava-01575a19b
+-Creator: Shivansh Srivastava
+-Email: shivansh.sri03@gmail.com
+-LinkedIn: shivansh-srivastava-01575a19b
 
 ## 📷 Screenshots
 
-![Home page](./screenshots/Screenshot%202025-05-19%20004743.png>)
+![Home page](./screenshots/Screenshot%202025-05-19%20004743.png)
 ![Dark Home page](./screenshots/Screenshot%202025-05-19%20004526.png)
 ![Upload page](./screenshots/Screenshot%202025-05-19%20004559.png)
 ![Uploaded text image](./screenshots/Screenshot%202025-05-19%20004646.png)
