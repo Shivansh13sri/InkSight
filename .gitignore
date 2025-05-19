@@ -119,5 +119,5 @@ build/
 .DS_Store
 Thumbs.db
 
-# Ignore large model files
-*.pth
+# Large model file to ignore
+backend/models/trocr_epoch_10.pth
